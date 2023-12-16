@@ -1,0 +1,354 @@
+main{
+    /* Formatting */
+    padding: 0;
+    width: 100%;
+    min-height: calc(1em + 90vh); 
+}
+
+
+/* Logout Button */
+#logout-checkbox{
+    display: none; /* Don't display */
+}
+#logout-btn{
+    /* Formatting */
+    color: #fff;
+    position: absolute;
+    top: 1.15vh;
+    right: 14vw;
+    cursor: pointer;
+    font-family: 'Clear Sans', 'Helvetica Neue',Arial, sans-serif;
+}
+
+/* Instructions */
+#instructions-container{
+    /* Formatting */
+    width: 30rem;
+    height: 40rem;
+    margin: auto;
+    margin-top: 15vh;
+    margin-bottom: 0%;
+    background-color: #121213;
+
+    /* Text */
+    font-family: 'Clear Sans', 'Helvetica Neue',Arial, sans-serif;
+    color: #fff;
+}
+#instructions-close-btn{
+    /* Formatting */
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+
+    /* Placement */
+    position: absolute;
+    top: 19.25vh;
+    right: 37.75vw;
+}
+#htp-text{
+    /* Formatting */
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 2vw;
+    margin-bottom: 0.3rem;
+}
+#guess-text{
+    /* Formatting */
+    font-size: 1.25rem;
+    margin-left: 2vw;
+    margin-top: 0;
+}
+.bp-text{
+    /* Formatting */
+    font-size: 1rem;
+    margin-left: 2vw;
+}
+#bp1{
+    /* Formatting */
+    margin-bottom: 0.3rem;
+}
+#bp2{
+    /* Formatting */
+    margin-top: 0rem;
+}
+#ex-text{
+    /* Formatting */
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 2vw;
+}
+.ex-game-board-row{
+    /* Content Formatting */
+    display: flex;
+}
+.ex-game-board-box{
+    /* Formatting */
+    width: 3.75rem;
+    height: 3.75rem;
+    margin: 0.125rem;
+    border: 1.75px solid #3a3a3c;
+    border-radius: 0.188rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+
+    /* Content Formatting */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Clear Sans', 'Helvetica Neue',Arial, sans-serif;
+}
+#ex1-game-board-row{
+    /* Formatting */
+    margin-left: 4vw;
+}
+#ex1-game-board-box1{
+    /* Box Formatting */
+    background-color: #538d4e;
+    border-color: #538d4e;
+}
+.ex-desc{
+    /* Formatting */
+    margin-top: 0.4vh;
+    margin-left: 5.5vw;
+    margin-bottom: 3.5vh;
+}
+.bolding{
+    /* Formatting */
+    font-weight: bold;
+}
+#ex2-game-board-row{
+    /* Formatting */
+    margin-left: 4vw;
+}
+#ex2-game-board-box2{
+    /* Box Formatting */
+    background-color: #b59f3b;
+    border-color: #b59f3b;
+}
+#ex2-desc{
+    /* Formatting */
+    margin-left: 6.25vw;
+}
+#ex3-game-board-row{
+    /* Formatting */
+    margin-left: 4vw;
+}
+#ex3-game-board-box4{
+    /* Box Formatting */
+    background-color: #3a3a3c;
+}
+#ex3-desc{
+    /* Formatting */
+    margin-left: 7.35vw;
+}
+#new-puzzle-text{
+    font-weight: bold;
+    margin-top: 5vh;
+    margin-left: 4.5vw;
+}
+
+
+/* Leaderboard Section */
+#leaderboard-container{
+    /* Formatting */
+    width: 30rem;
+    height: 40rem;
+    margin: auto;
+    margin-top: 15vh;
+    margin-bottom: 0%;
+    background-color: #121213;
+
+    /* Text */
+    font-family: 'Clear Sans', 'Helvetica Neue',Arial, sans-serif;
+    color: #fff;
+}
+#daily-word{
+    /* Formatting */
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+#twotd-text{
+    /* Formatting */
+    font-size: 1.25rem;
+    margin-left: 2vw;
+    margin-bottom: 0vh;
+}
+#tsotd-text{
+    /* Formatting */
+    font-size: 1.25rem;
+    margin-top: 0vh;
+    margin-left: 2vw;
+    margin-bottom: 0vh;
+}
+#user-score-text{
+    /* Formatting */
+    font-size: 1.25rem;
+    margin-left: 2vw;
+    margin-top: 0%;
+    margin-bottom: 1.5vh;
+}
+#leaderboard-close-btn{
+    /* Formatting */
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+
+    /* Placement */
+    position: absolute;
+    top: 20vh;
+    right: 37.75vw;
+}
+.leaderboard-bp-text{
+    /* Formatting */
+    font-size: 1rem;
+    margin-left: 2vw;
+    margin-top: 0.75vh;
+    margin-bottom: 0.75vh;
+}
+#oops-text{
+    /* Formatting */
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2.5vh;
+}
+
+
+/* Game Section */
+#game-container{
+    display: none; /* Dont display until user reads instructions */
+}
+/* Game Board */
+#game-board {
+    margin: 1.875rem auto; /* Make gap above and below board */
+
+    /* Content Formatting */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.game-board-row {
+    /* Content Formatting */
+    display: flex;
+}
+.game-board-box {
+    /* Formatting */
+    width: 3.75rem;
+    height: 3.75rem;
+    margin: 0.125rem;
+    border: 0.109rem solid #3a3a3c;
+    border-radius: 0.188rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+
+    /* Content Formatting */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Clear Sans', 'Helvetica Neue',Arial, sans-serif;
+}
+.filled-box {
+    /* Formatting */
+    border: 0.109rem solid #3a3a3c;
+    color: #fff;
+}
+
+/* Keyboard */
+#keyboard{
+    /* Formatting */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.key-row{
+    /* Formatting */
+    display: flex;
+    color: #fff;
+}
+#row2{
+    margin: 0.438rem 0; /* Make gap between key rows */
+}
+.key{
+    /* Formatting */
+    width: 2.813rem;
+    height: 3.75rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin: 0 .19rem;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    /* Coloring/Styling Button */
+    border-radius: .313rem;
+    border-style: solid;
+    border-color: #808384;
+    background-color: #808384;
+
+    /* Key Label Text */
+    color: #fff;
+    font-family: 'Clear Sans', 'Helvetica Neue',Arial, sans-serif;
+}
+#ent-key{
+    /* Formatting */
+    font-size: .725rem;
+    width: 4.375rem;
+}
+#del-key{
+    /* Formatting */
+    font-size: .725rem;
+    width: 4.375rem;
+}
+
+
+/* Responsive Section */
+@media screen and (max-width: 1200px){
+    #logout-btn{
+        right: 22vw;
+    }
+    #instructions-close-btn{
+        right: 30vw;
+    }
+    #leaderboard-close-btn{
+        right: 30vw;
+    }
+}
+@media screen and (max-width: 950px){
+    #logout-btn{
+        right: 23.25vw;
+    }
+}
+@media screen and (max-width: 830px){
+    #logout-btn{
+        right: 25vw;
+    }
+    #instructions-close-btn{
+        right: 23vw;
+    }
+    #leaderboard-close-btn{
+        right: 23vw;
+    }
+}
+@media screen and (max-width: 650px){
+    #logout-btn{
+        right: 32vw;
+    }
+    #instructions-close-btn{
+        right: 16vw;
+    }
+    #leaderboard-close-btn{
+        right: 16vw;
+    }
+    .key{
+        width: 2.5rem;
+    }
+    #game-board {
+        max-width: 96%;
+    }
+    .game-board-row {
+        max-width: 100%;
+    }
+}

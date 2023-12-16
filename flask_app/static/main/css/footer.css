@@ -1,0 +1,7 @@
+#footer-text{
+    /* Formatting */
+    text-align: center;
+    color: #cecece;
+    pointer-events: none;
+    font-family: 'Clear Sans', 'Helvetica Neue',Arial, sans-serif;
+}

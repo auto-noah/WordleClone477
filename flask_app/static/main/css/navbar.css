@@ -1,0 +1,75 @@
+/* NAV BAR SECTION */
+#wordle-text{
+    /* Formatting */
+    text-align: center;
+    color: #fff;
+    font-size: xx-large;
+    font-family: 'Clear Sans', 'Helvetica Neue',Arial, sans-serif;
+    margin: 1.5vh auto;
+    pointer-events: none;
+}
+#nav-hr{
+    /* Make element spread entire screen */
+    width: calc(100% + 1.875em);
+    margin-left: -0.625em;
+
+    /* Color */
+    border-color: #3a3a3c;
+}
+
+/* Personal Website Button */
+#personal-website-btn{
+    display: none; /* Don't display */
+}
+#personal-website-btn-label{
+    /* Positioning */
+    position: absolute;
+    top: 2vh;
+    right: 1vw;
+
+    /* Box */
+    display: flex;
+    min-width: calc(1em + 10%);
+    height: calc(1em + 1.8vh);
+    outline: 0.063rem solid #fff;
+    border-radius: 1.563rem;
+    cursor: pointer;
+}
+#personal-website-btn-link{
+    /* Formatting */
+    font-size: smaller;
+    text-decoration: none;
+    color: #fff;
+    margin: auto;
+    font-family: 'Clear Sans', 'Helvetica Neue',Arial, sans-serif;
+}
+
+
+/* Responsive Section */
+@media screen and (max-width: 1200px){
+    #personal-website-btn-label{
+        width: calc(1em + 15vw);
+    }
+}
+@media screen and (max-width: 950px){
+    #personal-website-btn-label{
+        width: calc(1em + 17vw);
+    }
+}
+@media screen and (max-width: 830px){
+    #personal-website-btn-label{
+        width: calc(1em + 20vw);
+    }
+}
+@media screen and (max-width: 650px){
+    #wordle-text{
+        text-align: left;
+    }
+    #personal-website-btn-label{
+        width: calc(1em + 24vw);
+        right: 2vw;
+    }
+    #personal-website-btn-link{
+        font-size: x-small;
+    }
+}

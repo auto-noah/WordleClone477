@@ -1,0 +1,25 @@
+{% extends 'shared/layout.html' %}
+
+{% block extrajs %}{% endblock %}
+
+{% block maincontent %}
+    <!-- Logout button -->
+    <input type="checkbox" id="logout-checkbox" title="Button to let user logout">
+    <label id="logout-btn-label" for="logout-checkbox">
+        <p id="logout-btn">Logout</p>
+    </label>
+
+    <!-- Leaderboard -->
+    <div id="leaderboard-container">
+        <p id="twotd-text">The word of the day is:</p>
+        <p id="daily-word">{{ daily_word }}</p>
+
+        <!-- List Each User's Score -->
+        <p id="tsotd-text">The top scores of the day:</p>
+        {% for user in leaderboard_info[:5] %}
+            {% if user['daily_score'] != -1 %}
+                <p class="leaderboard-bp-text">&emsp;&emsp;&#8226; {{ user['email'] }} guessed the word in: {{ user['daily_score'] }} tries.</p>                  
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endblock %}

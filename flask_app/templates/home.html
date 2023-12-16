@@ -1,0 +1,102 @@
+{% extends 'shared/layout.html' %}
+
+{% block extrajs %}
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" 
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer">
+    </script>
+{% endblock %}
+
+{% block maincontent %}
+    <!-- Logout button -->
+    <input type="checkbox" id="logout-checkbox" title="Button to let user logout">
+    <label id="logout-btn-label" for="logout-checkbox">
+        <p id="logout-btn">Logout</p>
+    </label>
+
+    <!-- Instructions -->
+    <div id="instructions-container">
+        <p id="instructions-close-btn">X</p>
+        <p id="htp-text">How To Play</p>
+        <p id="guess-text">Guess the Wordle in 'n' tries.</p>
+        <p id="bp1" class="bp-text">&nbsp;&nbsp;&#x2022; Each guess must be a valid 'n'-letter word.</p>
+        <p id="bp2" class="bp-text">&nbsp;&nbsp;&#x2022; The color of the tiles will change to show how <br>
+                                 &nbsp;&nbsp;&nbsp;&nbsp;close your guess was to the word.</p>
+        <p id="ex-text">Examples</p>
+
+        <div id="ex1-game-board-row" class="ex-game-board-row">
+            <div id="ex1-game-board-box1" class="ex-game-board-box">W</div>
+            <div id="ex1-game-board-box2" class="ex-game-board-box">E</div>
+            <div id="ex1-game-board-box3" class="ex-game-board-box">A</div>
+            <div id="ex1-game-board-box4" class="ex-game-board-box">R</div>
+            <div id="ex1-game-board-box5" class="ex-game-board-box">Y</div>
+        </div>
+        <p class="ex-desc"><span class="bolding">W</span> is in the word and in the correct spot.</p>
+
+        <div id="ex2-game-board-row" class="ex-game-board-row">
+            <div id="ex2-game-board-box1" class="ex-game-board-box">P</div>
+            <div id="ex2-game-board-box2" class="ex-game-board-box">I</div>
+            <div id="ex2-game-board-box3" class="ex-game-board-box">L</div>
+            <div id="ex2-game-board-box4" class="ex-game-board-box">L</div>
+            <div id="ex2-game-board-box5" class="ex-game-board-box">S</div>
+        </div>
+        <p id="ex2-desc" class="ex-desc"><span class="bolding">I</span> is in the word but in the wrong spot.</p>
+
+        <div id="ex3-game-board-row" class="ex-game-board-row">
+            <div id="ex3-game-board-box1" class="ex-game-board-box">V</div>
+            <div id="ex3-game-board-box2" class="ex-game-board-box">A</div>
+            <div id="ex3-game-board-box3" class="ex-game-board-box">G</div>
+            <div id="ex3-game-board-box4" class="ex-game-board-box">U</div>
+            <div id="ex3-game-board-box5" class="ex-game-board-box">E</div>
+        </div>
+        <p id="ex3-desc" class="ex-desc"><span class="bolding">U</span> is not in the word in any spot.</p>
+
+        <p id="new-puzzle-text">A new puzzle is released daily at midnight.</p>
+    </div>
+
+    <!-- Game -->
+    <div id="game-container">
+        <!-- Game Board -->
+        <div id="game-board"></div>
+
+        <!-- Keyboard -->
+        <div id="keyboard">
+            <div id="row1" class="key-row">
+                <button id="q-key" class="key">q</button>
+                <button id="w-key" class="key">w</button>
+                <button id="e-key" class="key">e</button>
+                <button id="r-key" class="key">r</button>
+                <button id="t-key" class="key">t</button>
+                <button id="y-key" class="key">y</button>
+                <button id="u-key" class="key">u</button>
+                <button id="i-key" class="key">i</button>
+                <button id="o-key" class="key">o</button>
+                <button id="p-key" class="key">p</button>
+            </div>
+            <div id="row2" class="key-row">
+                <button id="a-key" class="key">a</button>
+                <button id="s-key" class="key">s</button>
+                <button id="d-key" class="key">d</button>
+                <button id="f-key" class="key">f</button>
+                <button id="g-key" class="key">g</button>
+                <button id="h-key" class="key">h</button>
+                <button id="j-key" class="key">j</button>
+                <button id="k-key" class="key">k</button>
+                <button id="l-key" class="key">l</button>
+            </div>
+            <div id="row3" class="key-row">
+                <button id="ent-key" class="key">enter</button>
+                <button id="z-key"   class="key">z</button>
+                <button id="x-key"   class="key">x</button>
+                <button id="c-key"   class="key">c</button>
+                <button id="v-key"   class="key">v</button>
+                <button id="b-key"   class="key">b</button>
+                <button id="n-key"   class="key">n</button>
+                <button id="m-key"   class="key">m</button>
+                <button id="del-key" class="key">del</button>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wordle - The Noah Wolff Times</title>
+    <link rel="stylesheet"    href="{{ url_for('static', filename='main/css/header.css')         }}">
+    <link rel="stylesheet"    href="{{ url_for('static', filename='main/css/navbar.css')         }}">
+    <link rel="stylesheet"    href="{{ url_for('static', filename='main/css/home.css')           }}">
+    <link rel="stylesheet"    href="{{ url_for('static', filename='main/css/footer.css')         }}">
+    <link rel="stylesheet"    href="{{ url_for('static', filename='main/css/login.css')          }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='main/images/wordle-logo.png') }}">
+    {% block extracss %}{% endblock %}
+  </head>
+
+  <body>
+    <article>
+      <!-- The navigation bar -->
+      <nav>
+        <!-- Wordle text -->
+        <h1 id="wordle-text">Wordle</h1>
+
+        <!-- Personal website button -->
+        <input type="checkbox" id="personal-website-btn" title="Takes user to my personal website">
+        <label id="personal-website-btn-label" for="personal-website-btn">
+          <a id="personal-website-btn-link" href="https://final-exam2-yoqpwdjonq-uc.a.run.app">Visit My Personal Website</a>
+        </label>
+        <hr id="nav-hr">
+      </nav>
+
+      <!-- The main content  -->
+      <main>
+        <!-- All main content -->
+        {% block maincontent %}{% endblock %}
+      </main>
+
+      <!-- The footer of the file -->
+      <footer>
+        <p id="footer-text">Copyright © Noah, made with &lt;3 by me</p>
+      </footer>
+    </article>
+    
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='main/js/home.js')        }}" defer></script>
+    <script src="{{ url_for('static', filename='main/js/leaderboard.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='main/js/login.js')       }}" defer></script>
+    <script src="{{ url_for('static', filename='main/js/signup.js')      }}" defer></script>
+    {% block extrajs %}{% endblock %}
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

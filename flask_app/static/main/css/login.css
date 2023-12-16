@@ -1,0 +1,129 @@
+/* Login/Sign Up Page */
+.lisu-text{
+    /* Formatting */
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+}
+.lisu-text h1{
+    /* Formatting */
+    margin-top: 7.5%;
+    margin-bottom: 0;
+    font-size: calc(1em + 2.25vh);
+    font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+.lisu-text p{
+    /* Formatting */
+    margin-top: .5%;
+    margin-bottom: .5%;
+    font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+.lisu-text hr{
+    /* Formatting */
+    width: 40%;
+    border-color: #3a3a3c;
+}
+
+/* Login/Sign Up Form */
+.textbox{
+    /* Formatting */
+    width: calc(1em + 70%);
+    padding: 1.5em 1.5em;
+    margin: 1em auto;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+.lisu-form{
+    /* Formatting */
+    width: 50%;
+    margin: auto;
+}
+.submit-btn{
+    /* Formatting */
+    width: calc(1em + 70%);
+    padding: 1.5em 0;
+    margin: 1em auto;
+    border-style: solid;
+    background-color: #808384;
+    color: #fff;
+    display: block;
+    cursor: pointer;
+    font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+.submit-btn:hover{ 
+    /* Transition */
+    background-color: #538d4e;
+    border-color: #538d4e;
+    transition: 0.25s ease-in-out;
+}
+
+/* Login Failiure Text */
+.fail-text{
+    /* Formatting */
+    text-align: center;
+    font-size: larger;
+    color: #cd1313;
+    font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+
+    /* INITIALLY HIDDEN */
+    visibility: hidden;
+}
+
+/* Login/Sign Up Buttons */
+#su-button{
+    /* Formatting */
+    width: calc(1em + 25%);
+    padding: 1.5em 0;
+    margin: 1em auto;
+    border-style: solid;
+    background-color: #808384;
+    color: #fff;
+    display: block;
+    cursor: pointer;
+    font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+#su-button:hover{
+    /* Transition */
+    background-color: #b59f3b;
+    border-color: #b59f3b;
+    transition: 0.25s ease-in-out;
+}
+#li-button{
+    /* Formatting */
+    width: calc(1em + 25%);
+    padding: 1.5em 0;
+    margin: 1em auto;
+    border-style: solid;
+    background-color: #808384;
+    color: #fff;
+    display: block;
+    cursor: pointer;
+    font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+    visibility: hidden;
+}
+#li-button:hover{
+    /* Transition */
+    background-color: #b59f3b;
+    border-color: #b59f3b;
+    transition: 0.25s ease-in-out;
+}
+
+
+/* Responsive Section */
+@media screen and (max-width: 650px){
+    .lisu-text{
+        margin-top: 10vh;
+    }
+    .lisu-text hr{
+        width: 60%;
+    }
+    .textbox{
+        width: calc(1em + 90%);
+    }
+    .submit-btn{
+        width: calc(1em + 90%);
+    }
+}
