@@ -1,6 +1,6 @@
 # [Wordle Web Application](https://final-exam-yoqpwdjonq-uc.a.run.app/home)
 
-This is a clone of the popular daily word guessing game "Wordle" that I produced in my Web Development course. However, my implementation has a guess board of size 'nxn', where n is the length of the word of the day.
+This is a clone of the popular daily word guessing game "Wordle" that I produced in my Web Development course. However, my implementation has a grid size of 'nxn', where n is the length of the word of the day.
 
 https://final-exam-yoqpwdjonq-uc.a.run.app/home
 
