@@ -1,4 +1,3 @@
-# Author: Prof. MM Ghassemi <ghassem3@msu.edu>
 from flask import current_app as app
 from flask import render_template, redirect, request, session, url_for, copy_current_request_context
 from flask_socketio import SocketIO, emit, join_room, leave_room, close_room, rooms, disconnect
